@@ -1,0 +1,30 @@
+name: 🐞 Bug Report
+description: Melde einen Fehler, der behoben werden soll.
+title: "[BUG] "
+labels: [bug]
+body:
+  - type: markdown
+    attributes:
+      value: "Bitte beschreibe den Fehler und wie man ihn reproduzieren kann."
+  - type: textarea
+    id: description
+    attributes:
+      label: Beschreibung
+      placeholder: Was ist passiert?
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Schritte zur Reproduktion
+      placeholder: |
+        1. ...
+        2. ...
+        3. Fehler tritt auf
+    validations:
+      required: true
+  - type: input
+    id: environment
+    attributes:
+      label: Umgebung
+      placeholder: z. B. Firefox 124 / Node 20 / Debian Bookworm
