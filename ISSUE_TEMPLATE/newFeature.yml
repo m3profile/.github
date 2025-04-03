@@ -1,0 +1,28 @@
+name: ✨ Feature Request
+description: Vorschlag für eine neue Funktion
+title: "[Feature] "
+labels: [enhancement]
+body:
+  - type: textarea
+    id: motivation
+    attributes:
+      label: Motivation
+      placeholder: Warum ist dieses Feature hilfreich?
+    validations:
+      required: true
+  - type: textarea
+    id: description
+    attributes:
+      label: Feature-Beschreibung
+      placeholder: Was genau soll umgesetzt werden?
+    validations:
+      required: true
+  - type: checkboxes
+    id: scope
+    attributes:
+      label: Gehört zum Umfang
+      options:
+        - label: UI-Änderung nötig
+        - label: API-Änderung nötig
+        - label: Datenbankänderung nötig
+
